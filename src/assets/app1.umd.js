@@ -69,7 +69,7 @@
 
     exports.ModuleaService = ModuleaService;
     exports.ModuleaComponent = ModuleaComponent;
-    exports.ModuleaModule = ModuleaModule;
+    exports.App1 = ModuleaModule;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
