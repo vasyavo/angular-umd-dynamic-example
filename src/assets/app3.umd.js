@@ -75,7 +75,7 @@
 
     exports.ModulecService = ModulecService;
     exports.ModulecComponent = ModulecComponent;
-    exports.ModulecModule = ModulecModule;
+    exports.App3 = ModulecModule;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
