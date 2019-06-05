@@ -170,7 +170,7 @@
 
     exports.ModuledService = ModuledService;
     exports.ModuledComponent = ModuledComponent;
-    exports.ModuledModule = ModuledModule;
+    exports.App4 = ModuledModule;
     exports.ɵa = ComponentaComponent;
     exports.ɵb = ComponentbComponent;
     exports.ɵc = ComponentcComponent;
