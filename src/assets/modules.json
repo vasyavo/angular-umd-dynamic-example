@@ -1,27 +1,27 @@
 [
     {
         "path": "App1",
-        "location": "https://raw.githubusercontent.com/vasyavo/angular-umd-dynamic-example/master/src/assets/app1.umd.js",
+        "location": "https://raw.githubusercontent.com/vasyavo/angular-umd-dynamic-example/master/src/assets/modulea.umd.js",
         "moduleName": "App1",
         "description": "clarity form",
         "registered": true
     },
     {
         "path": "App2",
-        "location": "https://raw.githubusercontent.com/vasyavo/angular-umd-dynamic-example/master/src/assets/app2.umd.js",
+        "location": "https://raw.githubusercontent.com/vasyavo/angular-umd-dynamic-example/master/src/assets/moduleb.umd.js",
         "moduleName": "App2",
         "description": "clarity tab control with table and card - custom elements"
     },
     {
         "path": "App3",
-        "location": "https://raw.githubusercontent.com/vasyavo/angular-umd-dynamic-example/master/src/assets/app3.umd.js",
+        "location": "https://raw.githubusercontent.com/vasyavo/angular-umd-dynamic-example/master/src/assets/modulec.umd.js",
         "moduleName": "App3",
         "description": "clarity modal - custom elements",
         "registered": true
     },
     {
         "path": "App4",
-        "location": "https://raw.githubusercontent.com/vasyavo/angular-umd-dynamic-example/master/src/assets/app4.umd.js",
+        "location": "https://raw.githubusercontent.com/vasyavo/angular-umd-dynamic-example/master/src/assets/moduled.umd.js",
         "moduleName": "App4",
         "description": "default subnavigation with 3 components and some clarity stuff"
     }
