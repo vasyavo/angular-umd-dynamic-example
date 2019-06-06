@@ -4,7 +4,7 @@
         "location": "https://raw.githubusercontent.com/vasyavo/angular-umd-dynamic-example/master/src/assets/modulea.umd.js",
         "moduleName": "ModuleaModule",
         "description": "clarity form",
-        "registered": true
+        "registered": false
     },
     {
         "path": "moduleb",
@@ -17,7 +17,7 @@
         "location": "https://raw.githubusercontent.com/vasyavo/angular-umd-dynamic-example/master/src/assets/modulec.umd.js",
         "moduleName": "ModulecModule",
         "description": "clarity modal - custom elements",
-        "registered": true
+        "registered": false
     },
     {
         "path": "moduled",
