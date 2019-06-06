@@ -13,14 +13,14 @@
         "description": "clarity tab control with table and card - custom elements"
     },
     {
-        "path": "moduleac",
+        "path": "modulec",
         "location": "https://raw.githubusercontent.com/vasyavo/angular-umd-dynamic-example/master/src/assets/modulec.umd.js",
         "moduleName": "ModulecModule",
         "description": "clarity modal - custom elements",
         "registered": true
     },
     {
-        "path": "modulead",
+        "path": "moduled",
         "location": "https://raw.githubusercontent.com/vasyavo/angular-umd-dynamic-example/master/src/assets/moduled.umd.js",
         "moduleName": "ModuledModule",
         "description": "default subnavigation with 3 components and some clarity stuff"
