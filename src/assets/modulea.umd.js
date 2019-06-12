@@ -1,14 +1,14 @@
 (function(global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined'
-    ? factory(exports, require('@angular/core'), require('@angular/router'))
+    ? factory(exports, require('@angular/core'), require('@angular/router'), require('@ngrx/store'))
     : typeof define === 'function' && define.amd
     ? define('modulea', [
         'exports',
         '@angular/core',
-        '@angular/router'
-      ], factory)
-    : factory((global.modulea = {}), global.ng.core, global.ng.router);
-})(this, function(exports, core, router) {
+        '@angular/router',
+        '@ngrx/store'
+      ], factory) : (f=>f)()
+})(this, function(exports, core, router, ngrxStore) {
   'use strict';
 
   /**
@@ -83,6 +83,7 @@
       args: [
         {
           imports: [
+            ngrxStore.StoreModule.forFeature('ModuleA', {}),
             router.RouterModule.forChild([
               {
                 path: '',
