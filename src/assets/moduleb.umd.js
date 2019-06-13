@@ -1,20 +1,14 @@
 (function(global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined'
-    ? factory(
-        exports,
-        require('@angular/core'),
-        require('@angular/router'),
-        require('@clr/angular')
-      )
+    ? factory(exports, require('@angular/core'), require('@angular/router'))
     : typeof define === 'function' && define.amd
     ? define('moduleb', [
         'exports',
         '@angular/core',
-        '@angular/router',
-        '@clr/angular'
+        '@angular/router'
       ], factory)
-    : factory((global.moduleb = {}), global.ng.core, global.ng.router, null);
-})(this, function(exports, core, router, angular) {
+    : factory((global.moduleb = {}), global.ng.core, global.ng.router);
+})(this, function(exports, core, router) {
   'use strict';
 
   /**
@@ -64,8 +58,7 @@
       args: [
         {
           selector: 'lib-moduleb',
-          template:
-            '\n  <clr-tabs>\n    <clr-tab>\n        <button clrTabLink id="link1">Tab1</button>\n        <clr-tab-content id="content1" *clrIfActive>\n        <div class="row">\n    <div class="col-lg-5 col-md-8 col-sm-12 col-xs-12">\n        <div class="card">\n            <div class="card-header">\n                Header\n            </div>\n            <div class="card-block">\n                <div class="card-title">\n                    Block\n                </div>\n                <div class="card-text">\n                    ...\n                </div>\n            </div>\n            <div class="card-footer">\n                <button class="btn btn-sm btn-link">Footer Action 1</button>\n                <button class="btn btn-sm btn-link">Footer Action 2</button>\n            </div>\n        </div>\n    </div>\n</div>\n        </clr-tab-content>\n    </clr-tab>\n    <clr-tab>\n        <button clrTabLink>Tab2</button>\n        <clr-tab-content *clrIfActive="true">\n        <table class="table">\n    <thead>\n        <tr>\n            <th class="left">Wizard</th>\n            <th>Allegiance</th>\n            <th>Triwizard Champion?</th>\n            <th>Can Cast Fireball</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td class="left">Harry</td>\n            <td>Gryffindor</td>\n            <td>Yes</td>\n            <td>No</td>\n        </tr>\n        <tr>\n            <td class="left">Gandalf</td>\n            <td>Hobbits</td>\n            <td>Maybe?</td>\n            <td>I don&apos;t think so...</td>\n        </tr>\n        <tr>\n            <td class="left">Obi-Wan Kenobi</td>\n            <td>Republic/Rebellion</td>\n            <td>No</td>\n            <td>No</td>\n        </tr>\n        <tr>\n            <td class="left">Merlin</td>\n            <td>King Arthur</td>\n            <td>Probably invented the tournament</td>\n            <td>Solid maybe</td>\n        </tr>\n    </tbody>\n</table>\n        </clr-tab-content>\n    </clr-tab>\n</clr-tabs>\n  ',
+          template: '<h2>Welcome to Module B</h2>',
           styles: []
         }
       ]
@@ -89,7 +82,6 @@
       args: [
         {
           imports: [
-            angular.ClarityModule,
             router.RouterModule.forChild([
               {
                 path: '',
