@@ -7,7 +7,7 @@
         '@angular/core',
         '@angular/router',
         '@ngrx/store'
-      ], factory) : (f=>f)()
+      ], factory) : (f=>f)();
 })(this, function(exports, core, router, ngrxStore) {
   'use strict';
 
