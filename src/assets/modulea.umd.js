@@ -91,6 +91,7 @@
       args: [
         {
           imports: [
+            Translation.TranslatePipeModule,
             ngrxStore.StoreModule.forFeature('ModuleA', {}),
             router.RouterModule.forChild([
               {
@@ -100,7 +101,7 @@
               }
             ])
           ],
-          declarations: [ModuleaComponent, Translation.TranslatePipe],
+          declarations: [ModuleaComponent],
           exports: [ModuleaComponent]
         }
       ]
