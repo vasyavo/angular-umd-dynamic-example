@@ -5,7 +5,7 @@
         require('@angular/core'),
         require('@angular/router'),
         require('@ngrx/store'),
-        require('translate-pipe')
+        require('Translation')
       )
     : typeof define === 'function' && define.amd
     ? define('modulea', [
@@ -13,10 +13,10 @@
         '@angular/core',
         '@angular/router',
         '@ngrx/store',
-        'translate-pipe'
+        'Translation'
       ], factory)
     : (f => f)();
-})(this, function(exports, core, router, ngrxStore, TranslatePipe) {
+})(this, function(exports, core, router, ngrxStore, Translation) {
   'use strict';
 
   /**
@@ -100,7 +100,7 @@
               }
             ])
           ],
-          declarations: [ModuleaComponent, TranslatePipe],
+          declarations: [ModuleaComponent, Translation.TranslatePipe],
           exports: [ModuleaComponent]
         }
       ]
