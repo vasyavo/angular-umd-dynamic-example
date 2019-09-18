@@ -5,7 +5,7 @@
         require('@angular/core'),
         require('@angular/router'),
         require('@ngrx/store'),
-        require('Translation')
+        require('Pipes')
       )
     : typeof define === 'function' && define.amd
     ? define('modulea', [
@@ -13,10 +13,10 @@
         '@angular/core',
         '@angular/router',
         '@ngrx/store',
-        'Translation'
+        'Pipes'
       ], factory)
     : (f => f)();
-})(this, function(exports, core, router, ngrxStore, Translation) {
+})(this, function(exports, core, router, ngrxStore, Pipes) {
   'use strict';
 
   /**
@@ -91,7 +91,7 @@
       args: [
         {
           imports: [
-            Translation.TranslatePipeModule,
+            Pipes,
             ngrxStore.StoreModule.forFeature('ModuleA', {}),
             router.RouterModule.forChild([
               {
